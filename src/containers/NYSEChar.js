@@ -24,8 +24,13 @@ export default class NYSEChar extends Component {
   render() {
 console.log('joel',this.state.statOpen);
     return (
-      <main className="my-5">
-        <Grid>
+      <main>
+        <Grid className="my-5">
+          <Row>
+            <Col sm={12}>
+              <h2>Datos de acciones de la bolsa de valores en Nueva York (NYSE)</h2>
+            </Col>
+          </Row>
           <Row>
             <Col sm={12}>
               <Filter filters = {['mc', 'eps', 'beta', 'pe', 'change']} handleChange = {this._handleChange}/>

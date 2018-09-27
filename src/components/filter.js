@@ -13,12 +13,13 @@ export default class Filter extends React.Component {
 
   render() {
     return (
-      <div className = "form-group">
-       <select className = "form-control" ref="selector" onChange={this._handleChange}>
-       {this.props.filters.map((item, key) => {
-         return <option key = {key}> {item} </option>
-       })}
-       </select>
+      <div className = "form-group mt-5">
+        <label htmlFor="selector">Selecciona un indicador: </label>
+         <select id="selector" className = "ml-1" ref="selector" onChange={this._handleChange}>
+         {this.props.filters.map((item, key) => {
+           return <option key = {key}> {item} </option>
+         })}
+         </select>
       </div>
     )
   }
