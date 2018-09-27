@@ -24,7 +24,7 @@ export default class NYSEChar extends Component {
   render() {
 console.log('joel',this.state.statOpen);
     return (
-      <main className="mt-5">
+      <main className="my-5">
         <Grid>
           <Row>
             <Col sm={12}>
