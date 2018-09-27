@@ -15,7 +15,7 @@ export default class Filter extends React.Component {
     return (
       <div className = "form-group mt-5">
         <label htmlFor="selector">Selecciona un indicador: </label>
-         <select id="selector" className = "ml-1" ref="selector" onChange={this._handleChange}>
+         <select id="selector" className = "form-control" ref="selector" onChange={this._handleChange}>
          {this.props.filters.map((item, key) => {
            return <option key = {key}> {item} </option>
          })}
